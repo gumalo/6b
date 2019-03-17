@@ -1,0 +1,5 @@
+directorio=$1
+
+if [ -d $directorio ]; then
+  echo "Hola"
+fi

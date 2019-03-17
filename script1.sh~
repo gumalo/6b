@@ -1,0 +1,20 @@
+x=$1
+
+secuencia=`cat nombres.txt | wc -l`
+
+for i in `seq 1 $secuencia`; do
+    
+    num=`cat nombres.txt | head -$i | tail -1`
+    mkdir $num  
+    
+    for j in `seq 1 $x`; do
+	
+	nombre="personal$i"
+	mkdir ./$/$nombre
+    
+    done
+
+done
+	
+	
+
